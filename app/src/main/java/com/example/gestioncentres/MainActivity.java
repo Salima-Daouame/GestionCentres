@@ -25,14 +25,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // How to show activity sometimes second  and go to another activity
-        Handler handler = new Handler() ;
+        Handler handl= new Handler() ;
         TimerTask timerTask = new TimerTask() {
             @Override
             public void run() {
-                handler.post(new Runnable() {
+                handl.post(new Runnable() {
                     @Override
                     public void run() {
-                        Intent inten1 = new Intent(MainActivity.this, login_compte.class);
+                        Intent inten1 = new Intent(MainActivity.this, Login_compte.class);
                         startActivity(inten1);
                     }
                 });

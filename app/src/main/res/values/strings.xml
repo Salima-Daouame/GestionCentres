@@ -5,11 +5,18 @@
     <string name="name" >Nom Assouciation</string>
     <string name="code" >code Assouciation</string>
     <string name="email">Email Assouciation</string>
+    <string name="email1">Email Address</string>
     <string name="password">Mot de Passe</string>
     <string name="repassword">Confirmation</string>
-    <string name="reg">Create</string>
+    <string name="recep_text">Récupération de Compte</string>
+    <string name="txt1">Enter votre E-mail: </string>
+    <string name="verification">Verification</string>
+    <string name="verification_txt">Enter le code de Verification</string>
+    <string name="text_verify">si vous n’avez pas reçu de code </string>
+    <string name="resend">Renvoyer</string>
     <string name="reg1">Sign in</string>
     <string name="signintitle">Sign in to your account</string>
+    <string name="reg">Create</string>
     <string name="create"><u>Create</u></string>
 
 </resources>
