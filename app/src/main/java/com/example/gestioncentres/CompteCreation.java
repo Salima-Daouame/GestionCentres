@@ -59,7 +59,7 @@ public class CompteCreation extends AppCompatActivity {
 
         ccp=findViewById(R.id.ccp);
         editPhoneNumber=findViewById(R.id.edit_phone_number);
-        ImageView==findViewById(R.id.profil);
+
         img_Check=findViewById(R.id.img_check);
 
 

@@ -18,5 +18,13 @@
     <string name="signintitle">Sign in to your account</string>
     <string name="reg">Create</string>
     <string name="create"><u>Create</u></string>
+    <string name="solo">Welcome</string>
+    <string name="solm">Tiznit</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="centre">Les centre</string>
+    <string name="login">Login</string>
+    <string name="profile">Profile</string>
+    <string name="logout">LogOut</string>
 
 </resources>
