@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "204627706328",
+    "firebase_url": "https://gestioncentres-default-rtdb.firebaseio.com",
+    "project_id": "gestioncentres",
+    "storage_bucket": "gestioncentres.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:204627706328:android:0eb2835287e516b08872ad",
+        "android_client_info": {
+          "package_name": "com.example.gestioncentres"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "204627706328-a9bher7nup42mk01qm9vo8sfr6opm8ne.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgOqEl3Eq_5swxcmh9ZbIMyQ-yHOym39E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "204627706328-a9bher7nup42mk01qm9vo8sfr6opm8ne.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
