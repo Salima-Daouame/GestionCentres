@@ -81,7 +81,7 @@
                 android:layout_height="150dp"
                 android:src="@drawable/picture"
                 android:layout_marginTop="-20dp"
-                android:layout_marginRight="-40dp"
+                android:layout_marginRight="-30dp"
                 android:layout_alignParentRight="true" />
         </RelativeLayout>
 
