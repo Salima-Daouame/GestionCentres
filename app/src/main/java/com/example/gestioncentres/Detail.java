@@ -15,6 +15,7 @@ public class Detail extends AppCompatActivity {
      ImageView imageview;
      TextView textview1,textview2,textview3,textview4,textview5,textview6,textview7;
       Button click01;
+      TextView detl;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +25,17 @@ public class Detail extends AppCompatActivity {
         setContentView(R.layout.detail);
 
            // setSupportActionBar().hide();
+
+
+          detl=findViewById(R.id.detail);
+
+          detl.setOnClickListener(new View.OnClickListener() {
+              @Override
+              public void onClick(View view) {
+                  startActivity(new Intent(Detail.this,Popup_Detail.class));
+              }
+          });
+
 
         imageview = findViewById(R.id.imageView);
         textview1 = findViewById(R.id.txt);

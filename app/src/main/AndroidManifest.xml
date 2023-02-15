@@ -47,6 +47,10 @@
                 android:value="" />
         </activity>
         <activity
+            android:name=".Popup_Detail"
+            android:theme="@style/AppTheme.CustomTheme" >
+        </activity>
+        <activity
             android:name=".Profile"
             android:exported="true">
             <meta-data

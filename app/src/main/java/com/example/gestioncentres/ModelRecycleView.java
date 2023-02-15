@@ -45,7 +45,7 @@ public class ModelRecycleView extends RecyclerView.Adapter<ModelRecycleView.View
              holder.cardview.setOnClickListener(new View.OnClickListener() {
                  @Override
                  public void onClick(View view) {
-                     Toast.makeText(context,"Centre" +position,Toast.LENGTH_LONG).show();
+                     //Toast.makeText(context,"Centre" +position,Toast.LENGTH_LONG).show();
                      Intent intent = new Intent(context,Detail.class);
                      intent.putExtra("flag",arrayList.get(position).getImage());
                      intent.putExtra("name",arrayList.get(position).getNom());
