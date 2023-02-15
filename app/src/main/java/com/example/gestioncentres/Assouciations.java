@@ -9,6 +9,7 @@ public class Assouciations {
     String adrs;
     String mp1;
     String cfmp1;
+    //String image_url;
 
     public Assouciations(String nam, String cod, String numTl, String eml, String adrs, String mp1, String cfmp1) {
         Nam = nam;
@@ -18,6 +19,7 @@ public class Assouciations {
         this.adrs = adrs;
         this.mp1 = mp1;
         this.cfmp1 = cfmp1;
+      //  this.image_url=image_url;
     }
 
     public String getNam() {
@@ -47,4 +49,8 @@ public class Assouciations {
     public String getCfmp1() {
         return cfmp1;
     }
+
+    //public String getImage_url() {
+      //  return image_url;
+
 }

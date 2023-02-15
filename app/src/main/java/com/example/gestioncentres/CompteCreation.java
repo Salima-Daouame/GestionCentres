@@ -1,44 +1,49 @@
 package com.example.gestioncentres;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
-import android.widget.ImageView;
-import android.text.Editable;
-import android.text.TextUtils;
-import android.text.TextWatcher;
-import android.util.Patterns;
+import android.provider.MediaStore;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
 import android.view.WindowManager;
-import com.google.firebase.storage.FirebaseStorage;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+import com.google.firebase.storage.StorageTask;
 import com.hbb20.CountryCodePicker;
+import com.mikhaellopez.circularimageview.CircularImageView;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class CompteCreation extends AppCompatActivity {
 
+    CircularImageView profil;
+    ImageView cam;
        Button click1;
        private CountryCodePicker ccp;
        private EditText editPhoneNumber;
        private ImageView img_Check;
        EditText textInputEmail;
        EditText nameAss,codeAss,NumTele,EmailAss,AdrsAss,ModPass,ConfModpass;
+       ImageView  image_ur;
        Button btn;  //This is  button  declaration
         DatabaseReference ref; //for connection with firebase database;
        FirebaseStorage storage;
+       FirebaseAuth mAuth;
+       Uri ImageUri;
+       StorageTask uploadTaask;
+         StorageReference storageProfileRef;
 
 
     @Override
@@ -49,7 +54,7 @@ public class CompteCreation extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.creation_compte);
         textInputEmail = findViewById(R.id.email);
-        click1 = findViewById(R.id.B1tn0);
+      click1 = findViewById(R.id.B1tn0);
         click1.setOnClickListener(v -> {
             Intent myIntent = new Intent(CompteCreation.this, Login_compte.class);
           startActivity(myIntent);
@@ -57,6 +62,7 @@ public class CompteCreation extends AppCompatActivity {
 
         //******************
 
+        //********
         ccp=findViewById(R.id.ccp);
         editPhoneNumber=findViewById(R.id.edit_phone_number);
 
@@ -76,7 +82,8 @@ public class CompteCreation extends AppCompatActivity {
              }
 
         });
-
+         image_ur=findViewById(R.id.ImageViewId);
+         cam=findViewById(R.id.add_img);
         nameAss=findViewById(R.id.name);
         codeAss=findViewById(R.id.code);
         NumTele=findViewById(R.id.edit_phone_number);
@@ -86,13 +93,27 @@ public class CompteCreation extends AppCompatActivity {
         ConfModpass=findViewById(R.id.repassword);
         btn=findViewById(R.id.B1tn0);
 
+//*****
+        mAuth=FirebaseAuth.getInstance();
          ref=FirebaseDatabase.getInstance().getReference().child("Assouciations");
+        storageProfileRef=FirebaseStorage.getInstance().getReference().child("Profile pic");
+
+      /*  cam.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(CompteCreation.this,));
+            }
+        });*/
+
+
          btn.setOnClickListener(new OnClickListener() {
              @Override
              public void onClick(View view) {
                  insertAssouciationsData();
              }
          });
+
 
 
     }
@@ -105,6 +126,8 @@ public class CompteCreation extends AppCompatActivity {
         String adrs=AdrsAss.getText().toString();
         String mp1=ModPass.getText().toString();
         String cfmp1=ConfModpass.getText().toString();
+       // String image_url1=image_ur;
+
 
         Assouciations assouciations = new Assouciations(Nam,Cod,numTl,eml,adrs,mp1,cfmp1);
 

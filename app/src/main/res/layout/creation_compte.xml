@@ -33,6 +33,7 @@
                 android:layout_marginStart="120dp"
                 android:src="@drawable/avatar" />
 
+
             <ImageView
                 android:id="@+id/add_img"
                 android:layout_width="25dp"
@@ -41,6 +42,7 @@
                 android:layout_marginTop="57dp"
                 android:background="@drawable/ic_baseline_add_a_photo_24" />
         </FrameLayout>
+
 
 
         <EditText
