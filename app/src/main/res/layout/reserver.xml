@@ -119,18 +119,17 @@
         android:maxLines="6"/>
 
         <androidx.appcompat.widget.AppCompatButton
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:layout_marginTop="20dp"
-        android:textSize="20dp"
-        android:textColor="@color/white"
-        android:text="Valider"
-        android:fontFamily="@font/baloo"
-        android:id="@+id/btnRe"
-        android:textAllCaps="false"
-        android:background="@drawable/border">
-        </androidx.appcompat.widget.AppCompatButton>
+            android:id="@+id/btnRe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border"
+            android:fontFamily="@font/baloo"
+            android:text="Valider"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20dp"></androidx.appcompat.widget.AppCompatButton>
 
-</LinearLayout>
+    </LinearLayout>
 
 </ScrollView>

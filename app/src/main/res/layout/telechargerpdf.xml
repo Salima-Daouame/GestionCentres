@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    tools:context=".TelechargerPdf"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/background1"
+        android:paddingRight="20dp"
+        android:paddingLeft="30dp">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:fontFamily="@font/baloo"
+        android:text="Formulaire de reservation"/>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:weightSum="3">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textColorHint="#CCC4C2"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:hint="Name"
+        android:layout_marginStart="5dp"
+        android:id="@+id/name_Ass"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="16dp"
+        android:text="salma"
+        android:layout_weight="2"
+        android:padding="13dp"
+        android:id="@+id/name"/>
+
+</LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="30dp"
+            android:weightSum="3">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textColorHint="#CCC4C2"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:hint="Email"
+        android:layout_marginStart="5dp"
+        android:id="@+id/email_Ass"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="16dp"
+        android:text="salmazeroual@gmail.com"
+        android:layout_weight="2"
+        android:padding="13dp"
+        android:id="@+id/email"/>
+
+</LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="30dp"
+            android:weightSum="3">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textColorHint="#CCC4C2"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:hint="date debut"
+        android:layout_marginStart="5dp"
+        android:id="@+id/d_debut_Ass"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="16dp"
+        android:text="10/02/2023"
+        android:layout_weight="2"
+        android:padding="13dp"
+        android:id="@+id/dateDebut"/>
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:weightSum="3">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        :textColorHint="#CCC4C2"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:hint="Date fin"
+        android:layout_marginStart="5dp"
+        android:id="@+id/date_fin_Ass"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="16dp"
+        android:text="10/02/2023"
+        android:layout_weight="2"
+        android:padding="13dp"
+        android:id="@+id/dateFin"/>
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:weightSum="3">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textColorHint="#CCC4C2"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:hint="Heur debut"
+        android:layout_marginStart="5dp"
+        android:id="@+id/heure_debut_Ass"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="16dp"
+        android:text="10:00h"
+        android:layout_weight="2"
+        android:padding="13dp"
+        android:id="@+id/heureDebut"/>
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:weightSum="3">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textColorHint="#CCC4C2"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:hint="Heur fin"
+        android:layout_marginStart="5dp"
+        android:id="@+id/heure_fin_Ass"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="16dp"
+        android:text="12:00h"
+        android:layout_weight="2"
+        android:padding="13dp"
+        android:id="@+id/heureFin"/>
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:weightSum="3">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textColorHint="#CCC4C2"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:hint="Description"
+        android:layout_marginStart="5dp"
+        android:id="@+id/description_Ass"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="16dp"
+        android:text="Formation de l'informatique"
+        android:layout_weight="2"
+        android:padding="13dp"
+        android:id="@+id/description"/>
+
+</LinearLayout>
+
+</LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/border"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:fontFamily="@font/baloo"
+        android:text="Télecharger"
+        android:id="@+id/btnR"
+        android:textAllCaps="false">
+    </androidx.appcompat.widget.AppCompatButton>
+</LinearLayout>

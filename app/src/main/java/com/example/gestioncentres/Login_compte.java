@@ -23,33 +23,32 @@ public class Login_compte extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
         setContentView(R.layout.login);
+
+        b2 = findViewById(R.id.B2);
+        b2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick( View v1 ){
+                startActivity(new Intent(Login_compte.this,ReserverCenter.class));
+            }
+        });
         click2 = (TextView)findViewById(R.id.forgetText); //
         click2.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick( View v1 ){
-                Intent myIntent1 = new Intent(Login_compte.this, RecupPassWord.class);
-                startActivity(myIntent1);
-
+                Intent myIntent2 = new Intent(Login_compte.this, RecupPassWord.class);
+                startActivity(myIntent2);
             }
         });
         b1 = (TextView)findViewById(R.id.info1); //
         b1.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick( View v1 ){
-                Intent myIntent1 = new Intent(Login_compte.this, CompteCreation.class);
-                startActivity(myIntent1);
+                Intent myIntent3 = new Intent(Login_compte.this, CompteCreation.class);
+                startActivity(myIntent3);
 
             }
         });
-        b2 = findViewById(R.id.B2); //
-        b2.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick( View v1 ){
-                Intent myIntent1 = new Intent(Login_compte.this, ReserverCenter.class);
-                startActivity(myIntent1);
 
-            }
-        });
 
     }
 }
