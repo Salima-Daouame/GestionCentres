@@ -15,6 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class Login_compte extends AppCompatActivity {
    TextView click2;
     TextView b1;
+    Button b2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +37,15 @@ public class Login_compte extends AppCompatActivity {
             @Override
             public void onClick( View v1 ){
                 Intent myIntent1 = new Intent(Login_compte.this, CompteCreation.class);
+                startActivity(myIntent1);
+
+            }
+        });
+        b2 = findViewById(R.id.B2); //
+        b2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick( View v1 ){
+                Intent myIntent1 = new Intent(Login_compte.this, ReserverCenter.class);
                 startActivity(myIntent1);
 
             }

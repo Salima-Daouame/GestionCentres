@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
                 handl.post(new Runnable() {
                     @Override
                     public void run() {
-                        Intent inten1 = new Intent(MainActivity.this, Login_compte.class);
+                        Intent inten1 = new Intent(MainActivity.this, Dashboard.class);
                         startActivity(inten1);
                     }
                 });
