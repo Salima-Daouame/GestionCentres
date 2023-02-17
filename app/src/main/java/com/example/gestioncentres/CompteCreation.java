@@ -56,8 +56,8 @@ public class CompteCreation extends AppCompatActivity {
         textInputEmail = findViewById(R.id.email);
       click1 = findViewById(R.id.B1tn0);
         click1.setOnClickListener(v -> {
-            Intent myIntent = new Intent(CompteCreation.this, ReserverCenter.class);
-          startActivity(myIntent);
+            Intent myIntent01 = new Intent(CompteCreation.this, Login_compte.class);
+          startActivity(myIntent01);
         });
 
         //******************
