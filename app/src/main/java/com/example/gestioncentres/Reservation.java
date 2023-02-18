@@ -1,5 +1,7 @@
 package com.example.gestioncentres;
 
+import android.widget.EditText;
+
 import java.util.Date;
 
 public class Reservation {
@@ -8,14 +10,15 @@ public class Reservation {
     String Email;
     String date_debut;
     String date_fin;
-    int heur_debut;
-    int heur_fin;
+    String heur_debut;
+    String heur_fin;
     String description;
 
-    public Reservation(){}
+ public Reservation(){}
 
 
-     /*   public Reservation(String name, String email, Date date_debut, Date date_fin,int heur_debut, int heur_fin, String description) {
+
+     public Reservation(String name, String email, String date_debut, String date_fin, String heur_debut, String heur_fin, String description) {
             Name = name;
             Email = email;
             this.date_debut = String.valueOf(date_debut);
@@ -24,7 +27,7 @@ public class Reservation {
             this.heur_fin = heur_fin;
             this.description = description;
 
-        }*/
+        }
 
 
 
@@ -60,19 +63,19 @@ public class Reservation {
         this.date_fin = date_fin;
     }
 
-    public int getHeur_debut() {
+    public String getHeur_debut() {
         return heur_debut;
     }
 
-    public void setHeur_debut(int heur_debut) {
+    public void setHeur_debut(String heur_debut) {
         this.heur_debut = heur_debut;
     }
 
-    public int getHeur_fin() {
+    public String getHeur_fin() {
         return heur_fin;
     }
 
-    public void setHeur_fin(int heur_fin) {
+    public void setHeur_fin(String heur_fin) {
         this.heur_fin = heur_fin;
     }
 

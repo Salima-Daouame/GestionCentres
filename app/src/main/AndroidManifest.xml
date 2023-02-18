@@ -58,6 +58,20 @@
                 android:value="" />
         </activity>
         <activity
+            android:name=".TelechargerPdf"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ReserverCenter"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".CompteCreation"
             android:exported="true">
             <meta-data
