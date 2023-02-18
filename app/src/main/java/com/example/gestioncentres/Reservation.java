@@ -14,12 +14,11 @@ public class Reservation {
     String heur_fin;
     String description;
 
- //   public Reservation(String name, String email, String datedebut, String datefin, String heuredebut, String heurefin, String description){}
+ public Reservation(){}
 
 
 
-
-     /public Reservation(String name, String email, String date_debut, String date_fin, String heur_debut, String heur_fin, String description) {
+     public Reservation(String name, String email, String date_debut, String date_fin, String heur_debut, String heur_fin, String description) {
             Name = name;
             Email = email;
             this.date_debut = String.valueOf(date_debut);

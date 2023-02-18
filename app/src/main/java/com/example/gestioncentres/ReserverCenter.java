@@ -53,7 +53,7 @@ public class ReserverCenter extends AppCompatActivity {
         description_Ass = findViewById(R.id.description_Ass);
 
         btnRe = (Button) findViewById(R.id.btnRe);
-        Reservation reservation = new Reservation(name_Ass,email_Ass,date_debut,date_fin,heure_debut,heure_fin,description_Ass);
+        Reservation reservation = new Reservation();
 
 
         btnRe.setOnClickListener(new View.OnClickListener() {
