@@ -11,6 +11,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -76,5 +77,35 @@ public class Dashboard extends AppCompatActivity {
         });
 
 
+    }
+
+
+
+   /* public boolean OnCreateOptionMenu(Menu menu){
+         getMenuInflater().inflate(R.menu.main_menu,menu);
+         return true;
+    }*/
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        int id = item.getItemId();
+
+        if (id == R.id.nav_home){
+
+            Intent intent01 = new Intent(Dashboard.this,Dashboard.class);
+            startActivity(intent01);
+            return true;
+        }else
+        if (id == R.id.nav_login){
+            Intent intent02 = new Intent(Dashboard.this,Login_compte.class);
+            startActivity(intent02);
+            return true;
+        }else
+        if (id == R.id.nav_profile){
+            Intent intent03 = new Intent(Dashboard.this,Profile.class);
+            startActivity(intent03);
+            return true;
+        }
+   return  super.onOptionsItemSelected(item);
     }
 }

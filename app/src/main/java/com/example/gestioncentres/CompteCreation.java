@@ -2,9 +2,11 @@ package com.example.gestioncentres;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.text.TextUtils;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
@@ -92,6 +94,42 @@ public class CompteCreation extends AppCompatActivity {
         ModPass=findViewById(R.id.password);
         ConfModpass=findViewById(R.id.repassword);
         btn=findViewById(R.id.B1tn0);
+
+        //****
+
+        btn.setOnClickListener(view -> {
+            if(TextUtils.isEmpty(nameAss.getText().toString())){
+
+                nameAss.setError("Empty Email");
+                return;
+            }
+            if(TextUtils.isEmpty(codeAss.getText().toString())){
+
+                codeAss.setError("Empty code");
+                return;
+            }
+            if(TextUtils.isEmpty(NumTele.getText().toString())){
+
+                NumTele.setError("Empty Number Phone ");
+                return;
+            }
+            if(TextUtils.isEmpty(AdrsAss.getText().toString())){
+
+                AdrsAss.setError("Empty Adress ");
+                return;
+            }
+            if(TextUtils.isEmpty(ModPass.getText().toString())){
+
+                ModPass.setError("Empty PassWord ");
+                return;
+            }
+            if(TextUtils.isEmpty(ConfModpass.getText().toString())){
+
+                ConfModpass.setError("Empty confirm PassWord ");
+                return;
+            }
+
+        });
 
 //*****
         mAuth=FirebaseAuth.getInstance();
